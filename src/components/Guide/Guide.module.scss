@@ -1,0 +1,194 @@
+
+.guide{
+    width: 85%;
+    margin: 100px auto;
+
+    .guide_header{
+        text-align: center;
+        margin-bottom: 35px;
+
+        h3{
+            font-size: 48px;
+            margin: 0px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        p{
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+
+    .guide_body{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .guide_body_child{
+            width: 25%;
+            display: flex;
+            justify-content: space-between;
+
+            .guide_body_child_content{
+                width: 70%;
+
+                h3{
+                    font-size: 21px;
+                    margin: 0px;
+                    margin-top: 5px;
+                    position: relative;
+                    font-family: 'Poppins', sans-serif;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        bottom: -15px;
+                        left: 0;
+                        height: 1px;
+                        background: #FF7C17;
+                        width: 65px;
+                    }
+                }
+
+                p{
+                    font-weight: 500;
+                    width: 85%;
+                    font-size: 16px;
+                    margin-top: 30px;
+                    line-height: 26px;
+                    color:#5D5C6C;
+                }
+            }
+
+            .guide_body_child_change{
+                display: flex;
+                width: 30%;
+                justify-content: center;
+                padding-top: 80px;
+
+                span{
+                    background: white;
+                    border-radius: 50%;
+                    width: 45px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color:#FF9446;
+                    height: 45px;
+                    box-shadow: 0px 8px 25px -15px rgba(0, 0, 0, 0.7);
+                }
+            }
+        }
+
+        .guide_body_child_alt2{
+
+            .guide_body_child_content{
+                width: 80%;
+
+                p{
+                    width: 100%;
+                }
+            }
+
+            .guide_body_child_change{
+                width: 20%;
+            }
+        }
+
+        .guide_body_child_alt{
+            width: 20%;
+
+            .guide_body_child_content{
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+
+    .guide{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 975px) {
+
+    .guide{
+        width: 90%;
+    }
+    
+    .guide_body{
+        flex-wrap: wrap !important;
+    }
+    
+    .guide_body_child{
+        width: 45% !important;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .guide_header h3{
+        font-size: 44px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .guide_body{
+        justify-content: center !important;
+    }
+
+    .guide_header h3{
+        font-size: 40px !important;
+    }
+
+    .guide_body_child{
+        width: 100% !important;
+        flex-wrap: wrap !important;
+        margin-bottom: 30px;
+    }
+
+    .guide_body_child_content{
+        width: 85% !important;
+    }
+
+    .guide_body_child_change{
+        width: 100% !important;
+        justify-content: flex-start !important;
+        padding-top: 15px !important;
+    }
+
+    .guide_body_child_change span svg{
+        transform: rotate(90deg) !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .guide{
+        margin-bottom: 50px !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+   
+    .guide_header h3{
+        font-size: 35px !important;
+    }
+}
+
+@media screen and (max-width: 367px) {
+   
+    .guide_header h3{
+        font-size: 33px !important;
+    }
+    
+    .guide_body_child_content{
+        width: 90% !important;
+    }
+}

@@ -1,0 +1,552 @@
+
+.army_el{
+    width: 100%;
+    position: relative;
+
+    .army_cover{
+        position: absolute;
+        width: 100%;
+        height: 600px;
+        left: 0%;
+        top: -200px;
+    }
+
+    .army{
+        width: 85%;
+        margin: 0 auto;
+        position: relative;
+        margin-top: 30px;
+    
+        .army_container{
+            width: 100%;
+            position: relative;
+    
+            .army_banner{
+                position: absolute;
+                top: -60px;
+                width: 550px;
+                right: -50px;
+            }
+    
+            .army_container_wrapper{
+                width: 55%;
+                margin-top: 90px;
+    
+                /* army_container_wrapper_header */
+
+                .army_container_wrapper_header{
+                    background: #F6F5F8;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+                    width: 185px;
+                    padding: 7px 9px;
+                    box-shadow: 0px 1px 1px rgba(30, 12, 83, 0.12);
+                    border-radius: 8px;
+                    color: #3E3059;
+                    font-weight: 600;
+                    font-size: 16px;
+    
+                    span{
+                        border-radius: 50%;
+                        background: white; 
+                        padding: 5px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 5px;
+    
+                        svg{
+                            color:#71DE56;
+                        }
+                    }
+                }
+    
+                /* army_container_wrapper_body */
+    
+                .army_container_wrapper_body{
+                    margin-top: 20px;
+    
+                    h2{
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 64px;
+                        line-height: 74px;
+                        font-weight: 700;
+                        margin: 0px;
+                    }
+    
+                    p{
+                        font-size: 16px;
+                        color: #5D5C6C;
+                        margin: 0px;
+                        font-weight: 500;
+                        margin-top: 20px;
+                    }
+                }
+    
+                /* army_container_wrapper_footer */
+    
+                .army_container_wrapper_footer{
+                    margin-top: 30px;
+                    display: flex;
+                    width: 56%;
+                    justify-content: space-between;
+    
+                    a,
+                    button{
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                        text-decoration: none;
+                        transition: .3s;
+                        background: none;
+                        padding: 13px 35px; 
+                        position: relative;
+                        border-radius: 5px;
+    
+                        span{
+                            font-size: 16px;
+                            display: block;
+                            position: relative;
+                            color: black;
+                            font-weight: 700;
+                            z-index: 2;
+                        }
+    
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: 0;
+                            width: 100%;
+                            transform: skew(-10deg);
+                            transition: .3s;
+                            height: 100%;
+                            border-radius: 5px;
+                            top: 0;
+                        }
+                    }
+    
+                    .army_container_wrapper_footer_first{
+                        
+                        &::before{
+                            background: linear-gradient(96.97deg, #F9DFD9 4.31%, #F1B2F8 103.93%, #A7C9FF 199.49%);
+                        }
+
+                        &:hover::before{
+                            background: linear-gradient(96.97deg, #FFBDAE 4.31%, #F387FF 103.93%);
+                            box-shadow: 0px 16px 24px rgba(250, 165, 210, 0.24), 
+                                        0px 2px 6px rgba(250, 165, 210, 0.08), 
+                                        0px 0px 1px rgba(250, 165, 210, 0.08);
+                        }   
+                    }
+    
+                    .army_container_wrapper_footer_second{
+                        
+                        &::before{
+                            background: #E9E9E9;
+                        }
+
+                        &:hover::before{
+                            background: rgba(242, 242, 242, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* Adaptation */
+
+
+@media screen and (max-width: 1322px) {
+
+    .army_container_wrapper_footer{
+        width: 58% !important;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+
+    .army{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .army_container_wrapper_body h2{
+        font-size: 55px !important;
+    }
+
+    .army_banner{
+        width: 480px !important;
+        right: -30px !important;
+    }
+    
+    .army_container_wrapper_footer{
+        width: 62% !important;
+    }
+}
+
+@media screen and (max-width: 1130px) {
+
+    .army_container_wrapper_footer{
+        width: 65% !important;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .army_container_wrapper_body h2{
+        font-size: 51px !important;
+    }
+
+    .army_container_wrapper_footer{
+        width: 70% !important;
+    }
+
+    .army_banner{
+        width: 450px !important;
+        right: -30px !important;
+        top: -50px !important;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .army_container_wrapper_body h2{
+        font-size: 51px !important;
+        line-height: 60px !important;
+    }
+
+    .army_container_wrapper_body p{
+        line-height: 1.6;
+    }
+
+    .army_container_wrapper_footer{
+        width: 75% !important;
+    }
+
+    .army_banner{
+        width: 410px !important;
+    }
+}
+
+@media screen and (max-width: 975px) {
+
+    .army{
+        width: 95% !important;
+    }
+
+    .army_banner{
+        right: -10px !important;
+    }
+}
+
+@media screen and (max-width: 925px) {
+
+    .army_cover{
+        height: 600px;
+        left: -20%;
+        top: -200px;
+    }
+
+    .army_container_wrapper_body h2{
+        font-size: 48px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .army_container_wrapper_body h2{
+        font-size: 45px !important;
+    }
+
+    .army_container_wrapper_body p{
+        width: 90%;
+    }
+
+    .army_container_wrapper{
+        margin-top: 70px !important;
+    }
+
+    .army_banner{
+        top: -20px !important;
+    }
+
+    .army_container_wrapper_footer{
+        width: 77% !important;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    .army_cover{
+        height: 600px;
+        left: -40% !important;
+        top: -200px;
+    }
+    
+    .army_container_wrapper{
+        padding-top: 0px;
+        width: 60% !important;
+    }
+
+    .army_container_wrapper_footer{
+        width: 75% !important;
+    }
+
+    .army_banner{
+        width: 350px !important;
+        right: 0px !important;
+        top: -20px !important;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .army_banner{
+        width: 350px !important;
+        right: 0px !important;
+        top: 20px !important;
+    }
+
+    .army_container_wrapper_body h2{
+        font-size: 42px !important;
+    }
+
+    .army_container_wrapper{
+        padding-top: 0px;
+        width: 50% !important;
+    }
+
+    .army_container_wrapper_footer{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 730px) {
+
+    .army_container_wrapper{
+        width: 51% !important;
+    }
+
+    .army_container_wrapper_footer{
+        width: 100% !important;
+        flex-wrap: wrap;
+    }
+
+    .army_container_wrapper_footer a{
+        width: 65%;
+        text-align: center;
+    }
+
+    .army_container_wrapper_footer button{
+        width: 85%;
+    }
+
+    .army_container_wrapper_footer_second{
+        width: 64% !important;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .army_cover{
+        left: -50% !important;
+    }
+    
+    .army_container_wrapper_body h2{
+        font-size: 42px !important;
+        width: 95%;
+        position: absolute;
+        top: -40px;
+        text-align: center;
+        left: 2.5%;
+    }
+
+    .army_container_wrapper{
+        padding-top: 550px !important;
+        width: 80% !important;
+        margin: 0 auto !important;
+        margin-top: 70px !important;
+    }
+
+    .army_banner{
+        width: 450px !important;
+        right: 13% !important;
+        top: 100px !important;
+    }
+
+    .army_container_wrapper_body p{
+        text-align: center;
+        font-size: 18px !important;
+        width: 100% !important;
+        margin-bottom: 70px !important;
+    }
+
+    .army_container_wrapper_footer a,
+    .army_container_wrapper_footer_second{
+        width: 100% !important;
+        margin-top: 20px;
+        padding: 20px 35px !important; 
+    }
+    
+    .army_container_wrapper_header{
+        position: absolute;
+        bottom: 170px;
+        left: 33%;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .army_banner{
+        right: 10% !important;
+    }
+}
+
+@media screen and (max-width: 590px) {
+
+    .army_banner{
+        right: 8% !important;
+    }
+
+    .army_container_wrapper_header{
+        left: 31%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    .army_banner{
+        right: 6% !important;
+    }
+
+    .army_container_wrapper_header{
+        left: 29%;
+    }
+}
+
+@media screen and (max-width: 525px) {
+
+    .army_banner{
+        right: 3% !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+       
+    .army_container_wrapper_body h2{
+        font-size: 37px !important;
+        width: 100% !important;
+        left: 0 !important;
+        letter-spacing: 1px;
+    }
+
+    .army_container_wrapper{
+        padding-top: 490px !important;
+        position: relative;
+        z-index: 2 !important;
+    }
+
+    .army_banner{
+        right: 2% !important;
+    }
+
+    .army_container_wrapper_header{
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 475px) {
+
+    .army_banner{
+        right: 0% !important;
+    }
+
+    .army_container_wrapper{
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .army_banner{
+        right: -5% !important;
+        width: 110% !important;
+    }
+
+    .army_container_wrapper{
+        width: 95% !important;
+    }
+
+    .army_container_wrapper{
+        padding-top: 510px !important;
+    }
+
+    .army_cover{
+        left: -70% !important;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    
+    .army_container_wrapper_header{
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .army_container_wrapper_body h2{
+        font-size: 35px !important;
+    }
+
+    .army_container_wrapper_header{
+        left: 21%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .army_container_wrapper_header{
+        left: 20%;
+    }
+    
+    .army_container_wrapper_body h2{
+        font-size: 33px !important;
+        line-height: 45px !important;
+    }
+
+    .army_banner{
+        top: 80px !important;
+    }
+
+    .army_container_wrapper{
+        padding-top: 430px !important;
+    }
+}
+
+@media screen and (max-width: 360px) {
+
+    .army_container_wrapper_header{
+        left: 18%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .army_container_wrapper_body h2{
+        font-size: 31px !important;
+    }
+
+    .army_container_wrapper_header{
+        left: 16%;
+    }
+}

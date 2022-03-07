@@ -1,0 +1,118 @@
+
+.login_header{
+    position: relative;
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+
+    img{
+        cursor: pointer;
+    }
+
+    .navbar_wrapper_inner_lang{
+        border-radius: 5px;
+        width: 150px;
+        display: flex;
+        cursor: pointer;
+        height: 34px;
+        z-index: 2;
+        align-items: center;
+        margin-right: 25px;
+        position: relative;
+        transition: .2s;
+        justify-content: space-between;
+        border: 1px solid #00426947;
+
+        &:hover .navbar_wrapper_inner_left{
+            color:rgba(0, 32, 51, 1);
+        }
+
+        &:hover{
+            border: 1px solid rgba(122, 157, 177, 1);
+        }
+
+        .navbar_wrapper_inner_left{
+            display: flex;
+            align-items: center;
+            width: 80%;
+            font-size: 14px;
+            justify-content: center;
+            height: 100%;
+            transition: .2s;
+            color: rgba(93, 92, 108, 1);
+
+            img{
+                margin-right: 10px;
+            }
+        }
+
+        .navbar_wrapper_inner_right{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            color: rgba(93, 92, 108, 1);
+            border-left: 1px solid rgba(0, 66, 105, 0.28);
+        }
+
+        .drop{
+            position: absolute;
+            background: white;
+            transition: .2s;
+            height: 120px;
+            bottom: -120px;
+            display: flex;
+            z-index: 3;
+            box-sizing: border-box;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid rgba(0, 66, 105, 0.28);
+            box-sizing: border-box;
+            box-shadow: 0px 4px 4px rgba(0, 32, 51, 0.04), 0px 8px 24px rgba(0, 32, 51, 0.12);
+            border-radius: 4px;
+
+            .drop_child{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 33%;
+
+                &:hover{
+                    background: rgba(0, 66, 105, 0.05);
+                }
+
+                span{
+                    width: 20%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                div{
+                    width: 80%;
+                    display: flex;
+                    align-items: center;
+                    color: rgba(0, 32, 51, 1);
+                    
+                    img{
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px){
+    
+    .login_logo{
+        width: 150px;
+    }
+}
